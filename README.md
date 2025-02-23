@@ -34,11 +34,14 @@ Now that we have successefully converted our columns to numeric, we are going to
 
 ![Outlier Detection Boxplot](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Capture.JPG)
 
-From the boxplot above, we can see some outliers from a couple of the columns like total day minutes, total eve minutes, total night minutes etc. They are represented by the dots that are outside the whiskers. Outliers can affect the model performance and make the predictions less accurate so we will remove them. From the 3333 rows that we initially had, we are left with 3254. This means that we were able to remover 79 extreme outliers. Now that we have removed the outliers, we can now check the churn distribution for any class imbalance.
+From the boxplot above, we can see some outliers from a couple of the columns like total day minutes, total eve minutes, total night minutes etc. They are represented by the dots that are outside the whiskers. Outliers can affect the model performance and make the predictions less accurate so we will remove them. From the 3333 rows that we initially had, we are left with 3254. This means that we were able to remove 79 extreme outliers. Now that we have removed the outliers, we can now check the churn distribution for any class imbalance.
 
 ![Churn Distribution](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Churn%20distribution.JPG)
 
 ## Handling class imbalance
 
-From the bar graph, there is a clear class imbalance. About 85.7% of customers stayed while 14.3% left. Because we do not want to get biased predictions, we are going to have to balance our classes. For this case we are going to use manual oversampling just to prevent loosing any important data by undersampling. We are going to do this by duplicating the churned customers until both classes are balanced.
+From the bar graph, there is a clear class imbalance. About 85.7% of customers stayed while 14.3% left. Because we do not want to get biased predictions, we are going to have to balance our classes. For this case we are going to use manual oversampling just to prevent losing any important data by undersampling. We are going to do this by duplicating the churned customers until both classes are balanced. Once they are both balanced we can check which features highly influence churn.
+
+![Churn Correlation Heatmap](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Churn%20distribution.JPG)
+
 
