@@ -66,5 +66,19 @@ Now that we have the features we need, we are going to standardize the numerical
 ## 1. Logistic Regression
  We will start by splitting our data into training(80%) and testing(20%) then train a simple logistic regression model, make predictions and see how it will perform.
 
-![Logistic regression confusion Matrix]()
+![Logistic regression confusion Matrix](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Logistic%20Confusion%20Matrix.JPG)
+
+### Findings from our logistic regression model.
+
+1. The model was about 78.14% accurate.
+2. Precision and recall was balanced across all customers.(78%)
+3. The customers who stayed and were correctly classified were 447(True Negatives)
+4. The customers who left and were correctly classified were 425(True Positives)
+5. The customers who stayed and were wrongly classified as churned were 111(False Positives)
+6. The customers who left and were wrongly classified as stayed were 133(False Negatives)
+
+### 2. Random Forest
+We are now going to train a random forest model, just to see how it compares to our logistic regression model.
+[Random Forest confusion Matrix](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Logistic%20Confusion%20Matrix.JPG)
+
 
