@@ -22,3 +22,14 @@ This dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/becksddf/
 *Customer support interaction* - Customer service calls
 
 *Target variable* - Churn(1 = left, 0 = Stayed)
+
+## 3.Data Preparation
+### Data cleaning
+
+We will start by inspecting and cleaning our data. This process is crucial because raw data often contain errors, so it will improve our data accuracy. It will also enhance our model performance as it performs better with high-quality data. After that we will  standardize our data and remove any unnecessary columns so we can be left with the relevant ones. Machine learning models work best with numeric data but these columns are not numeric. We will have to convert them to numeric first.
+
+## Handling Outliers
+
+Now that we have successefully converted our columns to numeric, we are going to see if we can detect any outliers. We are going to do so by first generating a summary of our statistics which will help us identify possible values that are much higher or lower than expected.
+![Alt text](C:\Users\USER\Pictures\Capture.JPG)
+
