@@ -79,7 +79,7 @@ Now that we have the features we need, we are going to standardize the numerical
 
 ### 2. Random Forest
 We are now going to train a random forest model, just to see how it compares to our logistic regression model.
-[Random Forest confusion Matrix](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Random%20forest%20confusion%20matrix.JPG)
+![Random Forest confusion Matrix](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Random%20forest%20confusion%20matrix.JPG)
 
 ### Findings from our Random Forest Model
 
