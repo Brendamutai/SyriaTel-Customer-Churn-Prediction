@@ -31,5 +31,10 @@ We will start by inspecting and cleaning our data. This process is crucial becau
 ## Handling Outliers
 
 Now that we have successefully converted our columns to numeric, we are going to see if we can detect any outliers. We are going to do so by first generating a summary of our statistics which will help us identify possible values that are much higher or lower than expected.
+
 ![Outlier Detection Boxplot](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Capture.JPG)
+
+From the boxplot above, we can see some outliers from a couple of the columns like total day minutes, total eve minutes, total night minutes etc. They are represented by the dots that are outside the whiskers. Outliers can affect the model performance and make the predictions less accurate so we will remove them. From the 3333 rows that we initially had, we are left with 3254. This means that we were able to remover 79 extreme outliers. Now that we have removed the outliers, we can now check the churn distribution for any class imbalance.
+
+![Churn Distribution](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Capture.JPG)
 
