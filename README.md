@@ -42,6 +42,29 @@ From the boxplot above, we can see some outliers from a couple of the columns li
 
 From the bar graph, there is a clear class imbalance. About 85.7% of customers stayed while 14.3% left. Because we do not want to get biased predictions, we are going to have to balance our classes. For this case we are going to use manual oversampling just to prevent losing any important data by undersampling. We are going to do this by duplicating the churned customers until both classes are balanced. Once they are both balanced we can check which features highly influence churn.
 
-![Churn Correlation Heatmap](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Churn%20distribution.JPG)
+![Churn Correlation Heatmap](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Correlation%20Heatmap.JPG)
 
+From the heatmap above, we are able to see that:
+
+1. Customers with international plan churn more.(0.29)
+2. High daytime usage correlates with churn.(0.26)
+3. Frequent support calls will likely cause someone to churn.(0.24)
+4. Customers with voice mail plan are less likely to churn.(-0.13)
+5. More international calls slightly reduce churn.(-0.08)
+
+## Feature Engineering
+
+Now that we know exactly what features correlate with churn, we are going to create new variables that are going to help improve our machine learning model and help it make better predictions.
+
+1. Get the sum of all charges.
+2. The customer service call ratio.
+3. Average call duration.
+4. How international plan affects usage.
+
+Now that we have the features we need, we are going to standardize the numerical features for better model performance. We are also going to convert our categorical variables(specifically `area code` because we had converted the rest earlier) into a format that the machine will be able to read. Once that is done, We can fit our models!
+
+## 1. Logistic Regression
+ We will start by splitting our data into training(80%) and testing(20%) then train a simple logistic regression model, make predictions and see how it will perform.
+
+![Logistic regression confusion Matrix]()
 
