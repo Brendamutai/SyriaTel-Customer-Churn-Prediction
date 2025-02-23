@@ -79,6 +79,28 @@ Now that we have the features we need, we are going to standardize the numerical
 
 ### 2. Random Forest
 We are now going to train a random forest model, just to see how it compares to our logistic regression model.
-[Random Forest confusion Matrix](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Logistic%20Confusion%20Matrix.JPG)
+[Random Forest confusion Matrix](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Random%20forest%20confusion%20matrix.JPG)
 
+### Findings from our Random Forest Model
+
+1. The model was 99.91% accurate. This is literally almost perfect!
+2. Both precision and recall were both at 100% for all customers.
+3. There were no false negatives meaning all the customers who left were correctly classified!
+4. There was only one False positive meaning only 1 person who stayed was wrongly classified.
+5. 557 customers who stayed were correctly classified and 558 customers who left were correctly classified!
+
+
+## Conclusion
+#### Insights
+1. Customers with high international usage churn more.
+2. Customers with high charges churn more.
+3. Customers who call customer support often tend to leave.
+
+### Recommendations
+1. Offer better international plans - Adjust pricing or give the customers better international packages.
+2. Address high call chargers - Since charges seem to be too high, you can review them or introduce loyalty discount for existing customers.
+3. Improve customer service - Focus on resolving the customers' issues and make sure they are able to get a solution to their problems.
+
+# Summary
+After cleaning and balancing the dataset, we were able to train Logistic Regression and Random Forest models. The random forest was more powerful and was 99.91% accurate. We were able to identify key churn drivers and come up with recommendations that will help SyriaTel retain their customers, reducing churn and increasing revenue.
 
