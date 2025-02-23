@@ -31,5 +31,5 @@ We will start by inspecting and cleaning our data. This process is crucial becau
 ## Handling Outliers
 
 Now that we have successefully converted our columns to numeric, we are going to see if we can detect any outliers. We are going to do so by first generating a summary of our statistics which will help us identify possible values that are much higher or lower than expected.
-![Alt text](C:\Users\USER\Pictures\Capture.JPG)
+![Outlier Detection Boxplot](https://github.com/Brendamutai/SyriaTel-Customer-Churn-Prediction/blob/main/Capture.JPG)
 
